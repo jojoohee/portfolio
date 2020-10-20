@@ -10,16 +10,25 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// handle scrolling
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
-  
   const target = event.target;
   const link = target.dataset.link;
   if(link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
     scrollIntoView(link);
   });
+
+// Navbar toggle button
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+
 
   // "contact me" button
   const homeContactBtn = document.querySelector('.home__contact');
@@ -58,6 +67,13 @@ navbarMenu.addEventListener('click', (event) => {
     if(filter == null) {
       return;
     }
+
+    // Remove selection
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    e.target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(()=> {
       Projects.forEach((project) => {
