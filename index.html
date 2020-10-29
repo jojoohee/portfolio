@@ -1,324 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joohee's portfolio</title>
-    <meta name="description" content="portfolio for world-renowned web publisher joohee">
-    <meta name="Author" content="joohee">
-    <!-- favicon -->
-    <link rel="icon" href="./imgs/favicon.png" type="image/png">
-    <script 
-    src="https://kit.fontawesome.com/6062d60153.js" crossorigin="anonymous">
-    </script>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- Nabvar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">joohee</a>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="./favicon-16.ico">
+
+  <!-- safari 터치아이콘 -->
+  <link rel="apple-touch-icon-precomposed" href="./favicon-128.png">
+  
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+  <!-- bxSlider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        mode:'fade',
+        responsive:false,
+        controls:false,
+        auto:true,
+        pause:3000
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <title>HOLLYS Coffee</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="grid940">
+        <div class="header_top clearfix">
+          <div class="header_small_menu01">
+            <ul class="clearfix">
+              <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>가맹문의</a></li>
+              <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>아카데미</a></li>
+              <li><a href="company.html"><i class="fa fa-building" aria-hidden="true"></i>기업특판</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.jpg" alt="할리스로고">
+            </a>
+          </div>
+          <div class="header_small_menu02">
+            <ul class="clearfix">
+              <li><a href="#">멤버십 로그인</a></li>
+              <li><a href="#">멤버십 가입</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#" class="eng">English</a></li>
+              <li><a href="#">中文</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_bottom eng">
+          <ul class="clearfix">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">HOLLYS Mall</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">HOLLYS News</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">HOLLYS is</a></li>
+          </ul>
+        </div>
       </div>
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active" data-link="#home">Home</li>
-          <li class="navbar__menu__item" data-link="#about">About</li>
-          <li class="navbar__menu__item" data-link="#skills">Skills</li>
-          <li class="navbar__menu__item" data-link="#work">Work</li>
-          <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
-          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+    </header>
+    <section class="sec01 main_banner">
+      <div class="slider">
+        <div>
+            <img src="./images/main_banner01.jpg" alt="banner01">
+        </div>
+        <div>
+          <img src="./images/main_banner02.jpg" alt="banner02">
+        </div>
+        <div>
+          <img src="./images/main_banner03.jpg" alt="banner03">
+        </div>
+        <div>
+          <img src="./images/main_banner04.jpg" alt="banner04">
+        </div>
+        <div>
+          <img src="./images/main_banner05.jpg" alt="banner05">
+        </div>
+      </div>
+    </section>
+    <section class="sec02 fra_mall_store">
+      <div class="grid940 clearfix">
+        <div class="fra">
+          <div class="fra_tit">
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i> Franchise</h2>
+          </div>
+          <div class="fra_txt">
+            <p>가맹문의</p>
+          </div>
+          <div class="fra_img">
+            <img src="./images/franshise.jpg" alt="프랜차이즈">
+          </div>
+        </div>
+        <div class="mall">
+          <div class="mall_tit">
+            <h2><i class="fa fa-cc-visa" aria-hidden="true"></i> HOLLYS Mall</h2>
+          </div>
+          <div class="mall_txt">
+            <p>할리스커피의 다양한 상품들을 온라인에서도 만나보세요.</p>
+          </div>
+          <div class="mall_list">
+            <ul class="clearfix">
+              <li class="mall_list_item">
+                <ul>
+                  <li class="mall_line">
+                    <img src="./images/mall01.jpg" alt="초코빙수">
+                  </li>
+                  <li>
+                    <p>
+                      할리스X몰티져스<br>
+                      초코빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="mall_list_item">
+                <ul>
+                  <li class="mall_line">
+                    <img src="./images/mall02.jpg" alt="망고 치즈케익 빙수">
+                  </li>
+                  <li>
+                    <p>
+                      망고 치즈케익 빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="mall_list_item">
+                <ul>
+                  <li>
+                    <img src="./images/mall03.jpg" alt="딸기 치즈케익 빙수">
+                  </li>
+                  <li>
+                    <p>
+                      딸기 치즈케익 빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="store">
+          <div class="store_tit">
+            <h2><i class="fa fa-book" aria-hidden="true"></i> Store</h2>
+          </div>
+          <div class="store_txt">
+            <p>
+              전국에 있는 할리스 매장을<br>
+              찾아드립니다
+            </p>
+          </div>
+          <div class="store_img">
+            <img src="./images/store.jpg" alt="스토어1">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec03 banner">
+      <div class="grid940 clearfix">
+        <div class="banner01">
+          <a href="#">
+            <img src="./images/banner01.jpg" alt="banner01">
+          </a>
+        </div>
+        <div class="banner02">
+          <a href="#">
+            <img src="./images/banner02.jpg" alt="banner02">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="sec04 notice">
+      <div class="grid940 clearfix">
+        <div>
+          <div class="notice_tit">
+            <h2>
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+              Coffee Academy
+            </h2>
+          </div>
+          <div class="notice_txt">
+            <p>
+              할리스커피 아카데미와 함께하는 즐거운<br>
+              커피 여행!
+            </p>
+          </div>
+          <div class="notice_quick">
+            <p>
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+              바로가기
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="notice_tit">
+            <h2>
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              Hollys B2B Solution
+            </h2>
+          </div>
+          <div class="notice_txt">
+            <p>
+              할리스 F&B는 20년의 커피 노하우를<br>
+              기반으로 한 할리스 B2B 솔루션을<br>
+              소개합니다.
+            </p>
+          </div>
+          <div class="notice_quick">
+            <p>
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+              바로가기
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="notice_tit">
+            <h2>
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+              News
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </h2>
+          </div>
+          <div class="notice_txt">
+            <ul>
+              <li class="clearfix">
+                <div>
+                  <p>코로나 극복을 위한 고객....</p>
+                </div>
+                <div>
+                  <p>2020-07-14</p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div>
+                  <p>2020년 여름시즌 신제품....</p>
+                </div>
+                <div>
+                  <p>
+                    2020-06-30
+                  </p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div>
+                  <p>동대구역점 신규매장 오 ....</p>
+                </div>
+                <div>
+                  <p>2020-06-16</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="etc_imgs clearfix">
+            <div class="etc_img">
+              <img src="./images/icon1.jpg" alt="icon01">
+            </div>
+            <div class="etc_img">
+              <img src="./images/icon2.jpg" alt="icon02">
+            </div>
+            <div class="etc_img">
+              <img src="./images/icon3.jpg" alt="icon03">
+            </div>
+          </div>
+          <div class="etc_txt clearfix">
+            <p>창업안내</p>
+            <p>아카데미 강좌</p>
+            <p>고객문의</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec05 sns">
+      <div class="grid940 clearfix">
+        <div class="sns_tit">
+          <h2>HOLLYS Live</h2>
+        </div>
+        <div class="sns_icons">
+          <img src="./images/sns01.jpg" alt="sns01">
+          <img src="./images/sns02.jpg" alt="sns02">
+          <img src="./images/sns03.jpg" alt="sns03">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="grid940">
+        <ul class="clearfix">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">서비스이용약관</a></li>
+          <li><a href="#">멤버십이용약관</a></li>
+          <li><a href="#">고객설문</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#"><span class="eng">BI</span>소개</a></li>
         </ul>
-      </div>
-      <!-- Toggle btn -->
-      <button class="navbar__toggle-btn" data-link=".home__contact">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-
-    <!-- Home -->
-    <section id="home">
-    <div class="home__container">
-      <!-- <img 
-      src="imgs/profile.png" 
-      alt="joohee's profile photo" 
-      class="home__avatar"
-      /> -->
-      <h1 class="home__title">Hello, <br/> I'm web publisher joohee</h1>
-      <!-- <h2 class="home__description">"무한한 가능성"을 가진 웹퍼블리셔 조주희입니다.</h2> -->
-      <button class="home__contact">Contact Me</button>
-    </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        <!-- 새로운 분야에 도전하는 첫 발걸음이 무척 기대됩니다.
-        <br/> 열정을 가지고 배우고 부딪히며 발전하는 퍼블리셔를 꿈꾸고 있습니다. -->
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
-          </div>
-          <h2 class="major__title">
-            HTML
-          </h2>
-          <!-- <div class="major__description">
-            
-          </div> -->
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <h2 class="major__title">
-            CSS
-          </h2>
-          <!-- <div class="major__description">
-            
-          </div> -->
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-js"></i>
-          </div>
-          <h2 class="major__title">
-            JAVASCRIPT
-          </h2>
-          <!-- <div class="major__description">
-          
-          </div> -->
-        </div>
-      </div>
-      <div class="about__academy">
-        <div class="academy">
-          <img 
-          src="./imgs/academy/academy-logo.png" 
-          alt="Gukje computer academy" 
-          class="academy__logo">
-          <div class="academy__description">
-            <p class="academy__name">
-              Gukje Computer Academy
-            </p>
-            <p class="academy__period">
-              2020.06.19-2020.11.11
-            </p>
-          </div>
-        </div>
-        <!-- <div class="academy">
-          <img 
-          src="./imgs/academy/academy-logo.png" 
-          alt="Gukje computer academy" 
-          class="academy__logo">
-          <div class="academy__description">
-            <p class="academy__name">
-              Gukje Computer Academy
-            </p>
-            <p class="academy__period">
-              2020.06.19-2020.11.11
-            </p>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
         <p>
-          <!-- 계획을 세우고 실천하기를 좋아하는 저의 강점은 업무에 신속히 적응하는데 도움이 될 것입니다.
-          <br/>많은 경험을 통해 저만의 역량을 갖출 준비가 되어있습니다.  -->
+          법인명:(주)할리스에프앤비 대표자:김유진 사업자등록번호 21187-61044 통신판매업:제2019-서울종로-0193호<br>
+          주소:서울특별시 종로구 율곡로 88 삼환빌딩 8층(운니동) 대표전화:02-2188-7100 (가맹문의:1670-4432)<br>
+          COPYRIGHT(C) HOLLYS COFFEECo., Ltd. All Rights Reserved.
         </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset_title">Skills</h3>
-            <div class="skill">
-              <div class="skill_description">
-                <span>HTML</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>JAVASCRIPT</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value last" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill_description">
-                <span>JQUERY</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value last" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset_title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Sublime Text</span></li>
-                <li><span>Adobe Program</span></li>
-                <li><span>OA Program</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset_title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-
-    <!-- Wokrk -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">7</span>
-          </button>
-          <button class="category__btn" data-filter="Responsive">
-            Responsive<span class="category__count">2</span>
-          </button>
-          <button class="category__btn" data-filter="Pc">
-            Pc<span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="Mobile"">
-            Mobile<span class="category__count">2</span>
-          </button>
-        </div>
-
-        <div class="work__projects">
-          <a href="깃허브" class="project" target="blank" data-type="Responsive">
-            <img class="project__img" src="imgs/projects/iphone-200521-195335.png" alt="" />
-            <div class="project__description">
-              <h3>Hollys Coffee</h3>
-              <span>Site with HTML,CSS<br/>and javascript</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/indigo" class="project" target="blank" data-type="Responsive">
-          <img class="project__img" src="imgs/works/indigo.png" alt="인디고" />
-            <div class="project__description">
-              <h3>Indigo</h3>
-              <span>Site with HTML and CSS</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/megabox" class="project" target="blank" data-type="Pc">
-          <img class="project__img" src="imgs/projects/macbook-200521-195335.png" alt="메가박스 pc" />
-            <div class="project__description">
-              <h3>Megabox-pc</h3>
-              <span>Site with HTML,CSS<br/>and javascript</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/megabox" class="project" target="blank" data-type="Mobile">
-          <img class="project__img" src="imgs/works/mega-iphone.png" alt="메가박스 mobile" />
-            <div class="project__description">
-              <h3>Megabox-mo</h3>
-              <span>Site with HTML,CSS<br/>and javascript</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/paiks-pc" class="project" target="blank" data-type="Pc">
-          <img class="project__img" src="imgs/works/paiks-macbook.png" alt="빽다방 pc" />
-            <div class="project__description">
-              <h3>Paiks-pc</h3>
-              <span>Site with HTML and CSS</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/paiks-mo" class="project" target="blank" data-type="Mobile">
-          <img class="project__img" src="imgs/works/paiks-iphone.png" alt="빽다방 mobile" />
-            <div class="project__description">
-              <h3>Paiks-mo</h3>
-              <span>Site with HTML and CSS</span>
-            </div>
-          </a>
-          <a href="https://github.com/jojoohee/hansolpaper" class="project" target="blank" data-type="Pc">
-          <img class="project__img" src="imgs/works/hansol-macbook.png" alt="한솔제지" />
-            <div class="project__description">
-              <h3>Hansolpaper</h3>
-              <span>Site with HTML and CSS</span>
-            </div>
-          </a>
-          <a href="깃허브" class="project" target="blank" data-type="Pc">
-          <img class="project__img" src="imgs/works/hollys-macbook.png" alt="할리스커피" />
-            <div class="project__description">
-              <h3>Hollys coffee</h3>
-              <span>Site with HTML and CSS</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See whta they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis ab asperiores repellendus maiores quo excepturi, laborum labore commodi ad nihil ex non officiis numquam iusto nam obcaecati distinctio quae.</p>
-              <p class="name"><a href="">name</a> / academy</p>
-            </div>
-            <img src="imgs/testimonials/people1.jpg" alt="People" class="testimonial__avatar">
-          </div>
-          <div class="testimonial">
-            <img src="imgs/testimonials/people1.jpg" alt="People" class="testimonial__avatar">
-            <div class="testimonial__speech-bubble">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis ab asperiores repellendus maiores quo excepturi, laborum labore commodi ad nihil ex non officiis numquam iusto nam obcaecati distinctio quae.</p>
-              <p class="name"><a href="">name</a> / academy</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">jhjo.jhj43@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/jojoohee" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <p class="contact__rights">
-        2020 joohee - All rights reserved
-      </p>
-    </section>
-
-    <!-- Arrow up -->
-    <button class="arrow-up">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </body>
+    </footer>
+  </div>
+</body>
 </html>
